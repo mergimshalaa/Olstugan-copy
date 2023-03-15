@@ -5,7 +5,7 @@ https://www.olstugan.se
 
 **Deltagare:**
 Lucas Alfredsson,
-Mergin Shala,
+Mergim Shala,
 Parham Berenjian
 
 **Avgränsningar:**
