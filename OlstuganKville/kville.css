@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+ /* Specifika stylings för t.ex. header som ska vara responsiva 
+    finns längst ner i css-filen */
+.grid-container {
+    background-color: aqua;
+    display: grid;
+    grid-template: 
+    "header" 5em
+    "main" 1fr
+    "footer" 5em
+    / 1fr;
+}
+
+.logo {
+    grid-area: logo;
+    height: 4em;
+    padding-left: 1em;
+    margin-top: 0.2em;
+}
+
+nav {
+    height: 2em;
+    grid-area: nav;
+    display: grid;
+    grid-template: 
+    "menualt menualt menualt" 1fr;
+    justify-content: space-evenly;
+}
+
+
+.menualt{
+    color: #000;
+    font-weight: bold;
+    padding: 6px 1em;
+    border: solid 2px #000;
+    border-radius: 3px;
+    
+}
+.menualt:hover {
+    background-color: lightgrey;
+    border: solid 2px lightgrey;
+}
+
+ /* Här finns ett infoblad samt en carousel
+    med ett bildspel från lokalen. 
+    Dessa ligger nestlade i main. */
+
+.container-c {
+    display: grid;
+    grid-area: container-c;
+    height: 30vh;
+}
+.carousel-item img{
+    height: 30vh;
+    
+}
+
+ /* Styling för footer */
+.footer {
+    grid-area: footer;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    justify-content: end;
+    padding-right: 20%;
+    display: grid;
+    grid-template:
+    "cpyrt insta fb" 1fr 
+    / 130px 30px 30px;
+}
+
+.insta {
+    grid-area: cpyrt;
+}
+.fb {
+    grid-area: fb;
+}
+.insta {
+    grid-area: insta;
+}

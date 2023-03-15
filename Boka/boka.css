@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.grid-container {
+    background-color: aqua;
+    display: grid;
+    height: 100vh;
+}
+
+.logo {
+    grid-area: logo;
+    height: 4em;
+    padding-left: 1em;
+    margin-top: 0.6em;
+}
+
+nav {
+    height: 2em;
+    grid-area: nav;
+    display: grid;
+    grid-template: 
+    "menualt menualt menualt" 1fr;
+    justify-content: space-evenly;
+}
+
+
+.menualt{
+    color: #000;
+    font-weight: bold;
+    padding: 6px 1em;
+    border: solid 2px #000;
+    border-radius: 3px;
+    
+}
+.menualt:hover {
+    background-color: lightgrey;
+    border: solid 2px lightgrey;
+}
+
+
+.main {
+    background-color: green;
+    background-image: url('../images/bg-boka.png');
+    background-position: center;
+    background-size: cover;
+}
+
+/*All styling, positionering och storlek för bodyn*/
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    line-height: 1.5;
+}
+
+  
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F7F7F7;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+  }
+  
+  .fieldset {
+    border: none;
+    padding: 0;
+  }
+  
+  .bokabord {
+    color: #333333;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  label {
+    color: #333333;
+    font-family: 'Helvetica Neue', sans-serif;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  input[type="text"]::placeholder,
+  input[type="number"]::placeholder {
+    color: #BDBDBD;
+  }
+  
+  button {
+    background-color: #333333;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #1E1E1E;
+  }
+  
+/*Styling för knappen*/
+
+button:hover {
+    background-color: green;
+}
+
+.main {
+    padding: 12em 0;
+    display: flex;
+    align-items: center;
+}
+.fieldset {
+    padding-bottom: 1em;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    justify-content: end;
+    padding-right: 20%;
+    display: grid;
+    grid-template:
+    "cpyrt insta fb" 1fr / 130px 30px 30px
+}
+
+.insta {
+    grid-area: cpyrt;
+}
+.fb {
+    grid-area: fb;
+}
+.insta {
+    grid-area: insta;
+}

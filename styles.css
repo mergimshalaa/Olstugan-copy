@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+/* En container för hela body */
+
+.grid-container {
+    background-color: aqua;
+    display: grid;
+    grid-template: 
+    "header" 5em
+    "main" 1fr 
+    "footer" 5em
+    / 1fr;
+}
+
+ /* Styling för header och logotyp*/
+.header {
+    background-color: #fff;
+    grid-area: header;
+    height: 5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    grid-area: logo;
+    height: 4em;
+    padding-left: 1em;
+    margin-top: 0.5em;
+}
+
+ /* Styling för main */
+.main {
+    grid-area: main;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    background-image: url('./images/Olstugan-main.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 5em 1em;
+}
+
+/* All denna styling fram till "footer" är till 
+    för listan över lokalerna. */
+.main > ul {
+    color: #fff;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul > li {
+    padding: 2em;
+}
+
+a {
+    color: #fff;
+    text-decoration: none !important;
+}
+li:hover {
+    border: 2px solid #fff
+}
+
+.citykville {
+    padding: 2em;
+}
+
+ /* Styling för footer */
+.footer {
+    grid-area: footer;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    justify-content: end;
+    padding-right: 20%;
+    display: grid;
+    grid-template:
+    "cpyrt insta fb" 1fr / 130px 30px 30px
+}
+
+.insta {
+    grid-area: cpyrt;
+}
+.fb {
+    grid-area: fb;
+}
+.insta {
+    grid-area: insta;
+}

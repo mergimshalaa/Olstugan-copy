@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ölstugan</title>
+    <link rel="icon" type="image/x-icon" href="../images/Olicon.ico">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../OlstuganKville/kville.css">
+    <link rel="stylesheet" href="../OlstuganKville/media-kville.css">
+    <script src="https://kit.fontawesome.com/78a289b7c0.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- Huvud-container som har allt innehåll.-->
+    <div class="grid-container">
+
+        <!-- Header-->
+        <div class="grid-items header">
+            <a href="../index.html">
+                <img class="logo" src="../images/Olstuganlogo.png" alt="logo">
+            </a>
+                <!-- Nav-->
+            <nav>
+                <a href=""><div class="menualt">Meny</div></a>
+                <a href="../Boka/boka.html"><div class="menualt">Boka bord</div></a>
+                <a href=""><div class="menualt">Kontakta oss</div></a>
+            </nav>
+                <!-- Dropdown meny (Ej aktiv!) för mobilt läge -->
+            <div class="burgermenu">
+                <i class="fa-sharp fa-solid fa-bars fa-2xl"></i>
+            </div>
+
+        </div>
+
+                <!-- Main -->
+        <div class="grid-items main">
+            <!-- Ett infoblad om lokalen -->
+            <div class="infoblad">
+                <h2 class="infokville">Kville</h2>
+                <p>
+                    Adress: Herkulesgatan 3 A <br>
+                    Hållplatser: Hjalmar Brantingsplatsen eller Vågmästarplatsen <br><br>
+                    Restaurangens öppettider: <br>
+                    Måndag – Torsdag 15 - 01 <br>
+                    Fredag – Söndag 12 - 01 <br><br>
+                    Kökets öppettider: <br>
+                    Måndag – Torsdag 15 - 22 <br>
+                    Fredag – Söndag 12 - 22 <br><br>
+                    Boka gärna ett bord i förväg. <br><br>
+                    Telefonnummer: 031-165616 <br>
+                    E-post: hisingen@olstugan.se <br>
+                </p>
+            </div>
+            <!-- denna tomma div står här bara för att separera
+                .infoblad och .container-c -->
+            <div></div>
+            <!-- En carousel med bilder från lokalen. -->
+            <div class="container-c">
+                <div class="carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/carouselpic1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/carouselpic2.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/carouselpic3.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+        </div>
+        </div>
+            <!-- Footer -->
+            <div class="grid-items footer">
+                <!-- Här har vi en copyright och två ikoner som idealt ska
+                    ligga i varsin a-tagg då de leder till resturangers
+                    sociala medier. Dessa är då inte länkade för tillfället. -->
+                <div class="cpyrt">&copy; Ölstugan 1892</div>
+                <div class="insta"><i class="fa-brands fa-instagram fa-xl"></i></div>
+                <div class="fb"><i class="fa-brands fa-facebook fa-xl"></i></div>
+            </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+</body>
+</html>

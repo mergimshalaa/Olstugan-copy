@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ölstugan</title>
+    <link rel="icon" type="image/x-icon" href="../images/Olicon.ico">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../Boka/boka.css">
+    <link rel="stylesheet" href="../Boka/media-boka.css">
+    <script src="https://kit.fontawesome.com/78a289b7c0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- Huvud-container som har allt innehåll.-->
+    <div class="grid-container">
+
+        <!-- Header-->
+        <div class="grid-items header">
+            <a href="../OlstuganKville/kville.html">
+                <img class="logo" src="../images/Olstuganlogo.png" alt="logo">
+            </a>
+                <!-- Nav-->
+            <nav>
+                <a href=""><div class="menualt">Meny</div></a>
+                <a href="../Boka/boka.html"><div class="menualt">Boka bord</div></a>
+                <a href=""><div class="menualt">Kontakta oss</div></a>
+            </nav>
+                <!-- Dropdown meny för mobilt läge (Ej aktiv!)-->
+            <div class="burgermenu">
+                <i class="fa-sharp fa-solid fa-bars fa-2xl"></i>
+            </div>
+
+        </div>
+
+                <!-- Main -->
+        <div class="grid-items main">
+            <!-- -->
+               <!--Här har vi diven som formen ligger i, innehåller ett formulär-->
+               <div class="container">
+                <form>
+                    <fieldset class="fieldset">
+                        <h2 class="bokabord">Boka bord</h2>
+        
+                        <label for="name">Förnamn och Efternamn</label>
+                        <input type="text" id="name" placeholder>
+        
+                        <label for="telefon"> Telefon</label>
+                        <input type="text" id="telefon" placeholder>
+        
+                        <label for="datum">Datum</label>
+                        <input type="text" id="datum" placeholder>
+        
+                        <label for="tid">Tid</label>
+                        <input type="text" id="tid" placeholder>
+        
+                        <label for="antalpersoner">Antal personer</label>
+                        <input type="number" id="antalpersoner" placeholder>
+        
+                        <button>Bekräfta</button>
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+            <!-- Footer -->
+        <div class="grid-items footer">
+            <!-- Här har vi en copyright och två ikoner som idealt ska
+                ligga i varsin a-tagg då de leder till resturangers
+                sociala medier. Dessa är då inte länkade för tillfället. -->
+            <div class="cpyrt">&copy; Ölstugan 1892</div>
+            <div class="insta"><i class="fa-brands fa-instagram fa-xl"></i></div>
+            <div class="fb"><i class="fa-brands fa-facebook fa-xl"></i></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
